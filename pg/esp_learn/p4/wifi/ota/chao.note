@@ -1,0 +1,1 @@
+这里的ota例子，包含了对原生wifi接口的包装，可以快速方便地实现wifi连接(例如example_connect()等)。目前raymond什么都自己来，显得比较费事儿。
