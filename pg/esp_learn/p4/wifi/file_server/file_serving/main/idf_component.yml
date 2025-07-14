@@ -1,0 +1,8 @@
+dependencies:
+  protocol_examples_common:
+    path: ${IDF_PATH}/examples/common_components/protocol_examples_common
+
+  espressif/esp_wifi_remote: ^0.12.1
+  espressif/eppp_link: ^0.3.1
+  espressif/esp_hosted: ^2.0.9
+  esp_tinyusb: 1.4.4

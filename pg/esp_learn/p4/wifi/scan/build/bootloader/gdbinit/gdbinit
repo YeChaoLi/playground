@@ -1,0 +1,2 @@
+source /home/chao/Workspace/esp_learn/p4/wifi/scan/build/bootloader/gdbinit/symbols
+source /home/chao/Workspace/esp_learn/p4/wifi/scan/build/bootloader/gdbinit/connect

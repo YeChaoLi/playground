@@ -1,0 +1,64 @@
+Command: ninja flash
+[1/5] cd /home/chao/Workspace/esp_learn/p4/wifi/scan/build/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/chao/Workspace/esp_learn/p4/wifi/scan/build/partition_table/partition-table.bin /home/chao/Workspace/esp_learn/p4/wifi/scan/build/scan.bin
+scan.bin binary size 0x953d0 bytes. Smallest app partition is 0x100000 bytes. 0x6ac30 bytes (42%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/chao/Workspace/esp_learn/p4/wifi/scan/build/bootloader/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /home/chao/Workspace/esp_learn/p4/wifi/scan/build/bootloader/bootloader.bin
+Bootloader binary size 0x5760 bytes. 0x8a0 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/chao/esp/master/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/chao/esp/master/esp-idf -D "SERIAL_TOOL=/home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python;;/home/chao/esp/master/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/chao/Workspace/esp_learn/p4/wifi/scan/build -P /home/chao/esp/master/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32p4 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 4MB 0x2000 bootloader/bootloader.bin 0x10000 scan.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.dev8
+Serial port /dev/ttyUSB0
+Connecting...
+Chip is ESP32-P4 (revision v1.0)
+Features: High-Performance MCU
+Crystal is 40MHz
+MAC: 30:ed:a0:e1:75:5a
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000a5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22368 bytes to 13749...
+Writing at 0x00002000... (100 %)
+Wrote 22368 bytes (13749 compressed) at 0x00002000 in 0.7 seconds (effective 253.9 kbit/s)...
+Hash of data verified.
+Compressed 611280 bytes to 293960...
+Writing at 0x00010000... (5 %)
+Writing at 0x0001dfd1... (11 %)
+Writing at 0x0002a2f9... (16 %)
+Writing at 0x00036748... (22 %)
+Writing at 0x0003d2a5... (27 %)
+Traceback (most recent call last):
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/__init__.py", line 1355, in _main
+    main()
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/__init__.py", line 1063, in main
+    operation_func(esp, args)
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/cmds.py", line 652, in write_flash
+    esp.flash_defl_block(block, seq, timeout=timeout)
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/loader.py", line 127, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/loader.py", line 1186, in flash_defl_block
+    self.check_command(
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/loader.py", line 506, in check_command
+    val, data = self.command(op, data, chk, timeout=timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/loader.py", line 475, in command
+    p = self.read()
+        ^^^^^^^^^^^
+  File "/home/chao/.espressif/python_env/idf6.0_py3.12_env/lib/python3.12/site-packages/esptool/loader.py", line 408, in read
+    return next(self._slip_reader)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+A fatal error occurred: The chip stopped responding.
+FAILED: CMakeFiles/flash /home/chao/Workspace/esp_learn/p4/wifi/scan/build/CMakeFiles/flash 
+cd /home/chao/esp/master/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/chao/esp/master/esp-idf -D "SERIAL_TOOL=/home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python;;/home/chao/esp/master/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/chao/Workspace/esp_learn/p4/wifi/scan/build -P /home/chao/esp/master/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

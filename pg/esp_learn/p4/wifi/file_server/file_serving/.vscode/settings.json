@@ -1,0 +1,10 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/home/chao/esp/master/esp-idf",
+  "idf.toolsPath": "/home/chao/.espressif",
+  "idf.pythonInstallPath": "/usr/bin/python3",
+  "files.associations": {
+    "nvs_flash.h": "c",
+    "tusb.h": "c"
+  }
+}

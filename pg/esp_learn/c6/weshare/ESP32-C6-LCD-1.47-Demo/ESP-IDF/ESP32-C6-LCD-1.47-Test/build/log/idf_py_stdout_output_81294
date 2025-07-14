@@ -1,0 +1,57 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/bootloader/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/bootloader/bootloader.bin
+Bootloader binary size 0x57d0 bytes. 0x2830 bytes (31%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+info: INFO: Symbol LV_MEM_SIZE_KILOBYTES defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:73
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:2
+info: INFO: Symbol LV_USE_DEMO_WIDGETS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:6
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:1090
+info: INFO: Symbol LV_DEMO_WIDGETS_SLIDESHOW defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:10
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:1093
+info: INFO: Symbol LV_USE_DEMO_KEYPAD_AND_ENCODER defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:1098
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:15
+info: INFO: Symbol LV_USE_DEMO_BENCHMARK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:19
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:1102
+info: INFO: Symbol LV_USE_DEMO_STRESS defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:23
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:1110
+info: INFO: Symbol LV_USE_DEMO_MUSIC defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:1114
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:27
+info: INFO: Symbol LV_FONT_MONTSERRAT_12 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:32
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:497
+info: INFO: Symbol LV_FONT_MONTSERRAT_14 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:36
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:499
+info: INFO: Symbol LV_FONT_MONTSERRAT_16 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/components/lvgl__lvgl/Kconfig:502
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:40
+info: INFO: Symbol BT_ENABLED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:46
+    /home/chao/esp/master/esp-idf/components/bt/Kconfig:3
+info: INFO: Symbol BT_BLE_50_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/esp/master/esp-idf/components/bt/host/bluedroid/Kconfig.in:1288
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:50
+info: INFO: Symbol BT_BLE_42_FEATURES_SUPPORTED defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/esp/master/esp-idf/components/bt/host/bluedroid/Kconfig.in:1353
+    /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/main/Kconfig.projbuild:54
+[7/9] Linking CXX executable ESP32-C6-LCD-1.47-Test.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.9.dev8
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/ESP32-C6-LCD-1.47-Test.bin
+[9/9] cd /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/partition_table/partition-table.bin /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/ESP32-C6-LCD-1.47-Test.bin
+ESP32-C6-LCD-1.47-Test.bin binary size 0x1e0d30 bytes. Smallest app partition is 0x200000 bytes. 0x1f2d0 bytes (6%) free.

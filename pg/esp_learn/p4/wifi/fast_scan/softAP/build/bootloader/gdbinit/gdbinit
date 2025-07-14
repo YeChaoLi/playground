@@ -1,0 +1,2 @@
+source /home/chao/Workspace/esp_learn/p4/wifi/fast_scan/softAP/build/bootloader/gdbinit/symbols
+source /home/chao/Workspace/esp_learn/p4/wifi/fast_scan/softAP/build/bootloader/gdbinit/connect

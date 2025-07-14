@@ -1,0 +1,10 @@
+Command: ninja flash
+[1/5] cd /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/partition_table/partition-table.bin /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/ESP32-C6-LCD-1.47-Test.bin
+FAILED: esp-idf/esptool_py/CMakeFiles/app_check_size /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/esp-idf/esptool_py/CMakeFiles/app_check_size 
+cd /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/partition_table/partition-table.bin /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/ESP32-C6-LCD-1.47-Test.bin
+Error: app partition is too small for binary ESP32-C6-LCD-1.47-Test.bin size 0x2221d0:
+  - Part 'factory' 0/0 @ 0x10000 size 0x200000 (overflow 0x221d0)
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/bootloader/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/chao/Workspace/esp_learn/c6/weshare/ESP32-C6-LCD-1.47-Demo/ESP-IDF/ESP32-C6-LCD-1.47-Test/build/bootloader/bootloader.bin
+Bootloader binary size 0x57d0 bytes. 0x2830 bytes (31%) free.
+ninja: build stopped: subcommand failed.

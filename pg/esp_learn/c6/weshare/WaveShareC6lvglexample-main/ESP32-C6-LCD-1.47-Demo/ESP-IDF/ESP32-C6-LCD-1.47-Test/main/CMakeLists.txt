@@ -1,0 +1,28 @@
+idf_component_register(
+                         SRCS "main.c" 
+                              "LCD_Driver/Vernon_ST7789T/Vernon_ST7789T.c" 
+                              "LCD_Driver/ST7789.c"
+                              "LVGL_Driver/LVGL_Driver.c"
+                              "LVGL_UI/C6example/C6example_UI.c"
+                              "LVGL_UI/C6example/ui.c"
+                              "LVGL_UI/C6example/ui_Screen1.c"
+                              "LVGL_UI/C6example/ui_comp_hook.c"
+                              "LVGL_UI/C6example/ui_helpers.c"
+                              "LVGL_UI/C6example/ui_img_1699707072.c"
+                              "LVGL_UI/C6example/ui_img_img_png.c"
+                              "LVGL_UI/C6example/ui_font_Font1.c"
+                              "SD_Card/SD_SPI.c"
+                              "RGB/RGB.c"
+                              "Wireless/Wireless.c"
+
+                         INCLUDE_DIRS 
+                              "./LCD_Driver/Vernon_ST7789T" 
+                              "./LCD_Driver" 
+                              "./LVGL_Driver" 
+                              "./LVGL_UI" 
+                              "./LVGL_UI/C6example"
+                              "./SD_Card"
+                              "./RGB" 
+                              "./Wireless"
+                              "."
+                       )

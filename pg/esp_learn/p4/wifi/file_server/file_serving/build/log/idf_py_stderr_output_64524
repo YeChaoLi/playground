@@ -1,0 +1,4 @@
+Command: ninja all
+info: INFO: Symbol EXAMPLE_PIN_CLK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /home/chao/Workspace/esp_learn/p4/wifi/file_server/file_serving/main/Kconfig.projbuild:65
+    /home/chao/Workspace/esp_learn/p4/wifi/file_server/file_serving/main/Kconfig.projbuild:41

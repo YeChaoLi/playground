@@ -1,0 +1,32 @@
+Command: /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 1 --decode-panic backtrace /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/simple_ota.elf /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/bootloader/bootloader.elf -m '/home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python' '/home/chao/esp/master/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4ff29ed0: esp_bootloader_get_description at /home/chao/esp/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:39
+[0m
+[0;33m--- 0x4ff2cbd0: esp_flash_encryption_enabled at /home/chao/esp/master/esp-idf/components/bootloader_support/src/flash_encrypt.c:89
+[0m
+[0;33m--- 0x4ff29eda: call_start_cpu0 at /home/chao/esp/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4000ccf4: transport_drv_sta_tx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_hosted/host/drivers/transport/transport_drv.c:216
+--- 0x4001c940: esp_wifi_remote_channel_rx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_wifi_remote/esp_wifi_remote_net.c:19
+[0m
+[0;33m--- 0x4000cc3c: transport_drv_ap_tx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_hosted/host/drivers/transport/transport_drv.c:246
+--- 0x4001c940: esp_wifi_remote_channel_rx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_wifi_remote/esp_wifi_remote_net.c:19
+[0m
+[0;33m--- 0x40035a94: wifi_sta_receive at /home/chao/esp/master/esp-idf/components/esp_wifi/src/wifi_netif.c:38
+[0m
+[0;33m--- 0x4ff29ed0: esp_bootloader_get_description at /home/chao/esp/master/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:39
+[0m
+[0;33m--- 0x4ff2cbd0: esp_flash_encryption_enabled at /home/chao/esp/master/esp-idf/components/bootloader_support/src/flash_encrypt.c:89
+[0m
+[0;33m--- 0x4ff29eda: call_start_cpu0 at /home/chao/esp/master/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x4000ccf4: transport_drv_sta_tx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_hosted/host/drivers/transport/transport_drv.c:216
+--- 0x4001c940: esp_wifi_remote_channel_rx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_wifi_remote/esp_wifi_remote_net.c:19
+[0m
+[0;33m--- 0x4000cc3c: transport_drv_ap_tx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_hosted/host/drivers/transport/transport_drv.c:246
+--- 0x4001c940: esp_wifi_remote_channel_rx at /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_wifi_remote/esp_wifi_remote_net.c:19
+[0m
+[0;33m--- 0x40035a94: wifi_sta_receive at /home/chao/esp/master/esp-idf/components/esp_wifi/src/wifi_netif.c:38
+[0m
+[0m

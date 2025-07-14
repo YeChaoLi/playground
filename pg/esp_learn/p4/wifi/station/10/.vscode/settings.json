@@ -1,0 +1,16 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/home/chao/esp/master/esp-idf",
+  "idf.toolsPath": "/home/chao/.espressif",
+  "idf.pythonInstallPath": "/usr/bin/python3",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-ftdi.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4"
+  },
+  "idf.port": "/dev/ttyUSB0",
+  "files.associations": {
+    "nvs_flash.h": "c"
+  }
+}

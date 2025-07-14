@@ -1,0 +1,57 @@
+Command: ninja flash
+[1/5] cd /home/chao/Workspace/esp_learn/p4/wifi/station/12/station/build/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/chao/Workspace/esp_learn/p4/wifi/station/12/station/build/partition_table/partition-table.bin /home/chao/Workspace/esp_learn/p4/wifi/station/12/station/build/wifi_station.bin
+wifi_station.bin binary size 0x77f30 bytes. Smallest app partition is 0x100000 bytes. 0x880d0 bytes (53%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/chao/Workspace/esp_learn/p4/wifi/station/12/station/build/bootloader/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /home/chao/Workspace/esp_learn/p4/wifi/station/12/station/build/bootloader/bootloader.bin
+Bootloader binary size 0x5760 bytes. 0x8a0 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/chao/esp/master/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/chao/esp/master/esp-idf -D "SERIAL_TOOL=/home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python;;/home/chao/esp/master/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32p4" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/chao/Workspace/esp_learn/p4/wifi/station/12/station/build -P /home/chao/esp/master/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32p4 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x2000 bootloader/bootloader.bin 0x10000 wifi_station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.dev8
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-P4 (revision v1.0)
+Features: High-Performance MCU
+Crystal is 40MHz
+MAC: 30:ed:a0:e1:75:5a
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00002000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00087fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22368 bytes to 13743...
+Writing at 0x00002000... (100 %)
+Wrote 22368 bytes (13743 compressed) at 0x00002000 in 0.7 seconds (effective 248.5 kbit/s)...
+Hash of data verified.
+Compressed 491312 bytes to 254853...
+Writing at 0x00010000... (6 %)
+Writing at 0x0001dce1... (12 %)
+Writing at 0x0002aaa0... (18 %)
+Writing at 0x0003529a... (25 %)
+Writing at 0x0003b874... (31 %)
+Writing at 0x00041c34... (37 %)
+Writing at 0x00048184... (43 %)
+Writing at 0x00050602... (50 %)
+Writing at 0x000576ff... (56 %)
+Writing at 0x0005db63... (62 %)
+Writing at 0x00064263... (68 %)
+Writing at 0x0006a2bf... (75 %)
+Writing at 0x00070400... (81 %)
+Writing at 0x00076248... (87 %)
+Writing at 0x0007c086... (93 %)
+Writing at 0x00083784... (100 %)
+Wrote 491312 bytes (254853 compressed) at 0x00010000 in 7.2 seconds (effective 542.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 308.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
