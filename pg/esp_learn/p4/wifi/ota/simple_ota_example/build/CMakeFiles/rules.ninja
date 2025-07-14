@@ -1489,7 +1489,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example -B/home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example -B/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build
   description = Re-running CMake...
   generator = 1
 

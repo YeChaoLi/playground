@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
-  include("/home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
+  include("/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/cmake_install.cmake")
+  include("/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/cmake_install.cmake")
 
 endif()
 

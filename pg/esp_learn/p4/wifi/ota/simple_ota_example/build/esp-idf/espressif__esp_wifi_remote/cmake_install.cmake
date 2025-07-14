@@ -1,4 +1,4 @@
-# Install script for directory: /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_wifi_remote
+# Install script for directory: /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/managed_components/espressif__esp_wifi_remote
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

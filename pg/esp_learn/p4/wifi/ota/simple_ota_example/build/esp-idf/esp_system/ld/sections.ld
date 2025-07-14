@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/esp_system/ld/sections.ld.in */
+/* Generated from: /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/esp_system/ld/sections.ld.in */
 
 /*
  * SPDX-FileCopyrightText: 2022 Espressif Systems (Shanghai) CO LTD

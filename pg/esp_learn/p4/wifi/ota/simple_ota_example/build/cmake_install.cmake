@@ -1,4 +1,4 @@
-# Install script for directory: /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example
+# Install script for directory: /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/cmake_install.cmake")
+  include("/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

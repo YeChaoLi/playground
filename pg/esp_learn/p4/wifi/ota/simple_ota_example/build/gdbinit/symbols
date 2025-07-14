@@ -13,8 +13,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/bootloader/bootloader.elf
+    add-symbol-file /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/simple_ota.elf
+file /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/simple_ota.elf

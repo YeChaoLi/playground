@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/chao/Workspace/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/esp_system/port/soc/esp32p4/cmake_install.cmake")
+  include("/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/esp_system/port/soc/esp32p4/cmake_install.cmake")
 endif()
 

@@ -1,0 +1,25 @@
+Command: ninja all
+[1/14] Performing build step for 'bootloader'
+[1/1] cd /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/bootloader/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/bootloader/bootloader.bin
+Bootloader binary size 0x5760 bytes. 0x8a0 bytes (9%) free.
+[2/14] No install step for 'bootloader'
+[3/14] Generating x509_crt_bundle
+/home/chao/esp/master/esp-idf/components/mbedtls/esp_crt_bundle/gen_crt_bundle.py:100: CryptographyDeprecationWarning: Parsed a serial number which wasn't positive (i.e., it was negative or zero), which is disallowed by RFC 5280. Loading this certificate will cause an exception in a future release of cryptography.
+  self.certificates.append(x509.load_pem_x509_certificate(crt.encode(), default_backend()))
+[4/14] Completed 'bootloader'
+[5/14] Generating ../../x509_crt_bundle.S
+[6/14] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[7/14] Linking C static library esp-idf/mbedtls/libmbedtls.a
+[8/14] Generating ../../ca_cert.pem.S
+[9/14] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/ca_cert.pem.S.obj
+[10/14] Linking C static library esp-idf/main/libmain.a
+[11/14] Generating esp-idf/esp_system/ld/sections.ld
+[12/14] Linking CXX executable simple_ota.elf
+[13/14] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32p4 image...
+Merged 3 ELF sections
+Successfully created esp32p4 image.
+Generated /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/simple_ota.bin
+[14/14] cd /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/esp-idf/esptool_py && /home/chao/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/chao/esp/master/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/partition_table/partition-table.bin /home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build/simple_ota.bin
+simple_ota.bin binary size 0xd1330 bytes. Smallest app partition is 0x1a9000 bytes. 0xd7cd0 bytes (51%) free.
