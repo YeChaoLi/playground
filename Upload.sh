@@ -7,12 +7,8 @@
 
 set -e
 
-if [ $# -ne 1 ]; then
-  echo "Usage: $0 <target-directory>"
-  exit 1
-fi
-
-TARGET=$1
+REPO_ROOT=$(git rev-parse --show-toplevel)
+TARGET="$REPO_ROOT/pg"
 
 if [ ! -d "$TARGET" ]; then
   echo "Error: $TARGET does not exist or is not a directory."
