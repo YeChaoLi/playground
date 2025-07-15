@@ -10,6 +10,13 @@
     "IDF_TARGET": "esp32p4"
   },
   "files.associations": {
-    "esp_crt_bundle.h": "c"
+    "esp_crt_bundle.h": "c",
+    "esp_system.h": "c",
+    "protocol_examples_common.h": "c",
+    "esp_wifi.h": "c",
+    "nvs_flash.h": "c",
+    "esp_http_client.h": "c",
+    "esp_ota_ops.h": "c",
+    "freertos.h": "c"
   }
 }

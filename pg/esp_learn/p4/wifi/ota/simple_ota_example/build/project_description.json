@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "simple_ota",
-    "project_version":    "47a06c3-dirty",
+    "project_version":    "5d180fb-dirty",
     "project_path":       "/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example",
     "idf_path":           "/home/chao/esp/master/esp-idf",
     "build_dir":          "/home/chao/Workspace/playground/pg/esp_learn/p4/wifi/ota/simple_ota_example/build",
